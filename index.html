@@ -112,19 +112,14 @@
     let series = [];
 
     let imageId1 = [
-        'dicomweb://s3.amazonaws.com/lury/PTCTStudy/1.3.6.1.4.1.25403.52237031786.3872.20100510032220.7.dcm',
-        'dicomweb://s3.amazonaws.com/lury/PTCTStudy/1.3.6.1.4.1.25403.52237031786.3872.20100510032220.8.dcm',
-        'dicomweb://s3.amazonaws.com/lury/PTCTStudy/1.3.6.1.4.1.25403.52237031786.3872.20100510032220.9.dcm',
-        'dicomweb://s3.amazonaws.com/lury/PTCTStudy/1.3.6.1.4.1.25403.52237031786.3872.20100510032220.10.dcm',
-        'dicomweb://s3.amazonaws.com/lury/PTCTStudy/1.3.6.1.4.1.25403.52237031786.3872.20100510032220.11.dcm',
-        'dicomweb://s3.amazonaws.com/lury/PTCTStudy/1.3.6.1.4.1.25403.52237031786.3872.20100510032220.12.dcm',
+        'dicomweb:../assets/images/data.dcm',
+        'dicomweb:../assets/images/data.dcm',
+        'dicomweb:../assets/images/data.dcm',
+        'dicomweb:../assets/images/data.dcm',
+    
     ];
 
-    let imageId2 = [
-        'dicomweb://s3.amazonaws.com/lury/PTCTStudy/1.3.6.1.4.1.25403.52237031786.3872.20100510032220.9.dcm',
-        'dicomweb://s3.amazonaws.com/lury/PTCTStudy/1.3.6.1.4.1.25403.52237031786.3872.20100510032220.10.dcm',
-        'dicomweb://s3.amazonaws.com/lury/PTCTStudy/1.3.6.1.4.1.25403.52237031786.3872.20100510032220.11.dcm',
-    ];
+
 
 
     const element = document.getElementById('dicomImage');
@@ -216,7 +211,7 @@
             cornerstone.displayImage(thumnail_img, image, viewport);
             loaded = true;
         }).catch(function (err) {
-            alert(err);
+            <!-- alert(err); -->
         });
     }
 
